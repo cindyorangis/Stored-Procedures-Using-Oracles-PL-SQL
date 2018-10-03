@@ -94,7 +94,8 @@ BEGIN
   
   INSERT INTO Lab1_tab (Id, LName)
     VALUES(Lab1_seq.NEXTVAL, v_LName);
--- d.	 Insert the instructor’s last name teaching the least amount of courses if his/her last name does NOT end on “s”. Here do not use the sequence to generate the ID; instead use your first variable
+/* d.	 Insert the instructor’s last name teaching the least amount of courses if his/her last name does NOT end on “s”. 
+       Here do not use the sequence to generate the ID; instead use your first variable */
   BEGIN
     SELECT LAST_NAME
     INTO v_LName
